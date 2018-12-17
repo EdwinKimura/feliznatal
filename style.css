@@ -1,0 +1,60 @@
+*{
+    margin:0 auto;font-family:Avalon
+}
+@font-face{
+    font-family:Avalon;src:url("_Fontes/Avalon.ttf") format('truetype')
+}
+body{
+	background-color: #c0000b;
+}
+.content{
+	position: fixed;
+	width: 100%;
+	text-align: center;
+}
+.txt{
+	color: white;
+	font-size: 72px;
+	margin: 0 auto;
+	list-style-type: none;
+}
+.animation{
+	overflow: hidden;
+	height: 80px;
+	animation: 2s linear 0s normal none infinite opacity;
+}
+ul {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  animation: 6s linear 0s normal none infinite change;
+}
+
+ul li {
+  line-height: 80px;
+  margin: 0;
+  text-align: center;
+}
+@keyframes opacity {
+  0%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes change {
+  0%,10%, 100% {
+    transform: translateY(0);
+  }
+  25%,35% {
+    transform: translateY(-25%);
+  }
+  50%,60% {
+    transform: translateY(-50%);
+  }
+  75%,85%{
+    transform: translateY(-75%);
+  }
+  90%, 100% {
+    transform: translateY(0%);
+  }
+}
